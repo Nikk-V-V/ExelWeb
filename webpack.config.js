@@ -34,14 +34,14 @@ module.exports = {
   entry: ['@babel/polyfill', './index.js'],
   output: {
     filename: filename('js'),
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist')
   },
   resolve: {
     extensions: ['.js'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      '@core': path.resolve(__dirname, 'src/core'),
-    },
+      '@core': path.resolve(__dirname, 'src/core')
+    }
   },
   devtool: isDev ? 'source-map' : false,
   devServer: {
